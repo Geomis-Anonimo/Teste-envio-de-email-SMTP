@@ -1,2 +1,3 @@
 # Teste-envio-de-email-SMTP
-Com base na biblioteca phpmailer/phpmailer. Download de dependencias feito pelo Composer
+
+Comando pelo Linux dentro do diretório principal--- composer require phpmailer/phpmailer
