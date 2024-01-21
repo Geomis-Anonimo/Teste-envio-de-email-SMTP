@@ -14,7 +14,7 @@ if(isset($_POST['enviar'])) {
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-$mainUsername = 'juninholiu10@gmail.com';
+$mainUsername = 'seuEmail@gmail.com';
 
 try {
     //Server settings
@@ -23,7 +23,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';   //Set the SMTP server to send through
     $mail->SMTPAuth   = true;   //Enable SMTP authentication
     $mail->Username   = $mainUsername;   //SMTP username
-    $mail->Password   = 'rxxe ieyc gifu gwzm';  //SMTP password
+    $mail->Password   = '****************';  //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;    //Enable implicit TLS encryption
     $mail->Port       = 465;    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
@@ -49,7 +49,7 @@ try {
     $mail->send();
     echo 'E-mail enviado com Sucesso!';
 } catch (Exception $e) {
-    echo "Não foi possível enviar o email. Verificaro motivo: {$mail->ErrorInfo}";
+    echo "Não foi possível enviar o email. Verificar o motivo: {$mail->ErrorInfo}";
 }
 } else{
     echo "Erro ao enviar e-mail, acesso não foi via formulário";
